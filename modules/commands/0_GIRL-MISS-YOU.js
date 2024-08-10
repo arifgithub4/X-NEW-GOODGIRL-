@@ -17,7 +17,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("Miss") ||
 react.includes("miss you")) {
     var msg = {
-        body: `𝐌𝐈𝐒𝐒 𝐘𝐎𝐔 𝐓𝐎 𝐌𝐀𝐑𝐈 𝐉𝐀𝐀𝐍 🥰`,attachment: fs.createReadStream(__dirname + `/noprefix/miss.gif`)
+        body: `𝐌𝐈𝐒𝐒 𝐘𝐎𝐔 𝐓𝐎 𝐌𝐀𝐑𝐈 𝐉𝐀𝐀𝐍 🥰`,attachment: fs.createReadStream(__dirname + `/GOOD-GIRL/MISS-YOU.gif`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🥺", event.messageID, (err) => {}, true)
